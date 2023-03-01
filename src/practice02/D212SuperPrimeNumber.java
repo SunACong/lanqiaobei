@@ -1,4 +1,4 @@
-package practice;
+package practice02;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ public class D212SuperPrimeNumber {
 		ArrayList<Integer> allNum = getAllNum();
 		for (Integer integer : allNum) {
 			if (isPrime(integer)) {
-				// 判断字串是否为质数
+				// 判断字串是否为质�?
 				System.out.println(integer);
 			}
 		}
@@ -19,11 +19,11 @@ public class D212SuperPrimeNumber {
 	    if (n <= 3) {
 	        return n > 1;
 	    }
-	    // 只有6x-1和6x+1的数才有可能是质数
+	    // 只有6x-1�?6x+1的数才有可能是质�?
 	    if (n % 6 != 1 && n % 6 != 5) {
 	        return false;
 	    }
-	    // 判断这些数能否被小于sqrt(n)的奇数整除
+	    // 判断这些数能否被小于sqrt(n)的奇数整�?
 	    int sqrt = (int) Math.sqrt(n);
 	    for (int i = 5; i <= sqrt; i += 6) {
 	        if (n % i == 0 || n % (i + 2) == 0) {
@@ -49,7 +49,7 @@ public class D212SuperPrimeNumber {
 				list.add(shi*10+ge);
 			}
 		}
-		// 一位
+		// �?�?
 		for (Integer ge : new Integer[] {3, 5, 7}) {
 			list.add(ge);
 		}

@@ -1,4 +1,4 @@
-package practice;
+package practice02;
 import java.util.Scanner;
 
 public class D214PalindromeDate {
